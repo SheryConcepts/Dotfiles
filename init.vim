@@ -19,6 +19,8 @@ call plug#end()
 " set jk or kj to escape
 inoremap jk <Esc>
 inoremap kj <Esc>
+vnoremap jk <Esc> 
+vnoremap kj <Esc>  
 
 " set J and K interfare with my tmux window resizing
 map <S-j> <Nop>
@@ -53,6 +55,10 @@ nnoremap <leader>n :NERDTreeToggle<cr>
 
 " split and ask for file
 nnoremap <leader>u :sp 
+" split current file 
+nnoremap <leader>uf :sp<cr>
 
 " vertial split and ask for file 
 nnoremap <leader>i :vsplit 
+" vertical split and ask for file
+ nnoremap <leader>if :vsplit<cr>

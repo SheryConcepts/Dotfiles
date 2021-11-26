@@ -14,16 +14,11 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'yorickpeterse/happy_hacking.vim'
 Plug 'ayu-theme/ayu-vim'
-Plug 'powerline/powerline'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 "-----------------------------------------------------------------------------------------------------
 "----------------------------------------------------------------------------------------------------
-
-set rtp+=/usr/share/powerline/powerline/bindings/vim/
-set laststatus=2
-set t_Co=256
 
 
 " set jk or kj to escape
@@ -45,7 +40,6 @@ nnoremap <leader>- :wincmd _<cr>:wincmd \|<cr>
 nnoremap <leader>= :wincmd =<cr>
 
 " rapid editing of vimrc 
-map s <Nop> 
 nnoremap <leader>so :source $MYVIMRC<cr>
 nnoremap <leader>vr :sp $MYVIMRC<cr>
 
